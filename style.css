@@ -1,3 +1,13 @@
+ *, *::before, *::after{
+                box-sizing: border-box;
+                margin: 0;
+                padding: 0;
+            }
+
+body{
+    border-bottom: 2px solid gray;
+}
+
 #grid{
     display: grid;
     grid-template-columns: 1fr 5fr;
@@ -7,47 +17,58 @@
         "habilidades experiencia"
         "idiomas formacao"
         "neutro complemento";
+    background-color: lightsteelblue;
 }
 
 #cabecalho{
     text-align: center;
     justify-content: center;
     grid-area: curriculo;
-    border: 3px gray solid;
+    border: 2px solid gray;
 }
 
 #informacoes{
     grid-area: informacoes;
-    border: 3px gray solid;
 }
 
 #resumo{
     grid-area: resumo;
-    padding-left: 5%;
-    border: 3px gray solid;
 }
 
 #habilidades{
     grid-area: habilidades;
-    border: 3px gray solid;
 }
 
 #experiencia{
     grid-area: experiencia;
-    border: 3px gray solid;
 }
 
 #formacao{
     grid-area: formacao;
-    border: 3px gray solid;
 }
 
 #idiomas{
     grid-area: idiomas;
-    border: 3px gray solid;
 }
 
 #complemento{
     grid-area: complemento;
-    border: 3px gray solid;
+    padding-bottom: 2%;
+}
+
+#neutro{
+    grid-area: neutro;
+}
+
+.corpo{
+    background-color: antiquewhite;
+    padding-left: 5%;
+    padding-top: 2%;
+}
+
+.principal{
+    padding-left: 10%;
+    padding-top: 6%;
+    border-left: 2px solid gray;
+    border-right: 2px solid gray;
 }
